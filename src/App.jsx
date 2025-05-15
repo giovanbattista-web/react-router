@@ -1,4 +1,7 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import Homepage from './links/Homepage';
+import ChiSiamo from './links/ChiSiamo';
+import Elenco from './links/Elenco';
 
 function App() {
 
@@ -7,6 +10,6 @@ function App() {
 
     </>
   )
-}
+};
 
-export default App
+export default App;
