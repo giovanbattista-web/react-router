@@ -5,7 +5,8 @@ function App() {
 
   return (
     <>
-
+      {/* ANDIAMO AD USARE LA COMPONENTE BrowserRouter */}
+      <Browser></Browser>
     </>
   )
 };
