@@ -2,7 +2,9 @@ import React from 'react';
 
 const ChiSiamo = () => {
     return (
-        <div></div>
+        <div>
+            <h3>ChiSiamo</h3>
+        </div>
     )
 };
 

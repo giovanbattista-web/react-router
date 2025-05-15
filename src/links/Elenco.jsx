@@ -2,7 +2,9 @@ import React from 'react';
 
 const Elenco = () => {
     return (
-        <div></div>
+        <div>
+            <h3>Elenco</h3>
+        </div>
     )
 };
 
