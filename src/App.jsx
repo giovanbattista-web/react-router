@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import Homepage from './links/Homepage';
-import ChiSiamo from './links/ChiSiamo';
-import Elenco from './links/Elenco';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
 
