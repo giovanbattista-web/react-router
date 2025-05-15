@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
     return (
         <>
-            <header>
+            <header className='content-header'>
                 <nav>
                     <ul>
                         <li>

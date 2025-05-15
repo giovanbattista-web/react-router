@@ -1,0 +1,11 @@
+body {
+    background-color: lightblue;
+}
+
+.card {
+    background-color: azure;
+}
+
+.content-header ul {
+    list-style-type: none;
+}

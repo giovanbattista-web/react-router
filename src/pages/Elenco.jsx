@@ -3,17 +3,6 @@ import Navbar from '../components/Navbar';
 import axios from "axios";
 import { useState, useEffect } from 'react';
 
-const ChiSiamo = () => {
-    return (
-        <>
-            <Navbar />
-            <div>
-                <h3>ChiSiamo</h3>
-            </div>
-        </>
-    )
-};
-
 function Elenco() {
     const [todos, setTodos] = useState([]);
 
@@ -31,6 +20,7 @@ function Elenco() {
 
     return (
         <>
+            <Navbar />
             <div className="container ">
                 <div className="row mb-4">
                     <div className="col-12">
@@ -55,16 +45,6 @@ function Elenco() {
                         </div>
                     ))}
                 </div>
-
-
-
-                {/*
-        <ul className="list-group">
-          {todos.map((todo) => {
-            <li key={todo.id} className="list-group-item" >{todo.name}</li>
-          })}
-        </ul >
-        */}
             </div>
         </>
     )

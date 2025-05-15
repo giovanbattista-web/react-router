@@ -6,7 +6,7 @@ const ChiSiamo = () => {
         <>
             <Navbar />
             <div>
-                <h3>ChiSiamo</h3>
+                <h3>Chi Siamo</h3>
             </div>
         </>
     )
