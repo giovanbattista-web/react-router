@@ -9,10 +9,12 @@ const Detail = () => {
     // DESTRUTTURAZIONE
     const { id } = useParams();
 
+    // DICHIARO LA VARIABILE DI STATO CHE MI CONTERRA' LA CARD 
     const [todo, setTodo] = useState({});
 
+    // DEFINIZIONE DELLA FUNZIONE CHE MI RECUPERA LE INFORMAZIONI DELLA CARD TRAMITE PARAMETRO
     const getSingleFoto = () => {
-        axios.get(`https://lanciweb.github.io/demo/api/actors/elenco/${id}`).then((response) => {
+        axios.get(`https://fakestoreapi.com/products/${id}`).then((response) => {
             setTodo(response.data);
         });
     };
@@ -30,11 +32,10 @@ const Detail = () => {
                         <div className='image'>
                             <img src={todo.image} alt="" />
                         </div>
-                        <h3>{todo.name}</h3>
-                        <h3>{todo.birth_year}</h3>
-                        <h3>{todo.nationality}</h3>
-                        <h3>{todo.biography}</h3>
-                        <h3>{todo.awards}</h3>
+                        <h3>{todo.title}</h3>
+                        <p>{todo.price}</p>
+                        <p>{todo.description}</p>
+                        <p>{todo.category}</p>
                     </div>
                 </div>
             </div >

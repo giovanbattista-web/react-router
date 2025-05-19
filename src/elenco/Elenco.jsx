@@ -7,7 +7,7 @@ function Elenco() {
     const [todos, setTodos] = useState([]); // COME const Todos = [] PERO' PUO' CAMBIARE 
 
     const fetchTodos = () => {
-        axios.get("https://lanciweb.github.io/demo/api/actors/")
+        axios.get("https://fakestoreapi.com/products/")
             .then((response) => {
                 setTodos(response.data); // COME Todos = resp.data PERO' PER LO USESTATE 
             });
@@ -31,14 +31,7 @@ function Elenco() {
                             to={`/elenco/ ${todo.id}`}>
                             <div className="card rounded-0 d-flex">
                                 <div className="todo-image">
-                                    <img src={todo.image} alt="" />
-                                </div>
-                                <div className="todo-info">
-                                    <h3 className="todo-name">{todo.name}</h3>
-                                    <p className="todo-birthYear">{todo.birth_year}</p>
-                                    <p className="todo-nationality">{todo.nationality}</p>
-                                    <p className="todo-biography">{todo.biography}</p>
-                                    <p className="todo-awards">{todo.awards}</p>
+                                    <img src={todo.image} className='img-fluid' alt="" />
                                 </div>
                             </div>
                         </NavLink>
