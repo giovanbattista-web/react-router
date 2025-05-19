@@ -9,3 +9,7 @@ body {
 .content {
     list-style-type: none;
 }
+
+.text {
+    text-decoration: none;
+}

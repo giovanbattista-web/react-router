@@ -1,8 +1,7 @@
-import { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import ChiSiamo from './pages/ChiSiamo';
 import Elenco from './elenco/Elenco';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import DefaultLayout from './layouts/DefaultLayout';
 import Detail from './elenco/Detail.jsx';
 

@@ -10,43 +10,40 @@ function Elenco() {
         axios.get("https://lanciweb.github.io/demo/api/actors/")
             .then((response) => {
                 setTodos(response.data); // COME Todos = resp.data PERO' PER LO USESTATE 
-                console.log(response.data);
             });
     };
 
     useEffect(() => {
-        fetchTodos();
+        fetchTodos()
     }, []);
 
     return (
         <>
-            <div className="container ">
-                <div className="row mb-4">
-                    <div className="col-12">
-                        <h1>ATTORI</h1>
-                    </div>
+            <div className="row mb-4">
+                <div className="col-12">
+                    <h1>ATTORI</h1>
                 </div>
-                <div className="row g-3">
-                    {todos.map((todos) => (
-                        <div key={`todos/${todos.id}`} className="col-12 col-md-6 col-lg-4">
-                            <NavLink
-                                to={`/elenco/ ${todos.id}`}>
-                                <div className="card rounded-0 d-flex">
-                                    <div className="todos-image">
-                                        <img src={todos.image} alt="" />
-                                    </div>
-                                    <div className="todos-info">
-                                        <h3 className="todos-name">{todos.name}</h3>
-                                        <h3 className="todos-birthYear">{todos.birth_year}</h3>
-                                        <h3 className="todos-nationality">{todos.nationality}</h3>
-                                        <h3 className="todos-biography">{todos.biography}</h3>
-                                        <h3 className="todos-awards">{todos.awards}</h3>
-                                    </div>
+            </div>
+            <div className="row g-3">
+                {todos.map((todo) => (
+                    <div className="col-12 col-md-6 col-lg-4" key={todos.id}>
+                        <NavLink className="text"
+                            to={`/elenco/ ${todo.id}`}>
+                            <div className="card rounded-0 d-flex">
+                                <div className="todo-image">
+                                    <img src={todo.image} alt="" />
                                 </div>
-                            </NavLink>
-                        </div>
-                    ))}
-                </div>
+                                <div className="todo-info">
+                                    <h3 className="todo-name">{todo.name}</h3>
+                                    <p className="todo-birthYear">{todo.birth_year}</p>
+                                    <p className="todo-nationality">{todo.nationality}</p>
+                                    <p className="todo-biography">{todo.biography}</p>
+                                    <p className="todo-awards">{todo.awards}</p>
+                                </div>
+                            </div>
+                        </NavLink>
+                    </div>
+                ))}
             </div>
         </>
     )
