@@ -16,7 +16,6 @@ function Elenco() {
     useEffect(() => {
         fetchTodos()
     }, []);
-
     return (
         <>
             <div className="row mb-4">
@@ -25,10 +24,10 @@ function Elenco() {
                 </div>
             </div>
             <div className="row g-3">
-                {todos.map((todo) => (
-                    <div className="col-12 col-md-6 col-lg-4" key={todos.id}>
+                {todos.map((todo) => {
+                    return <div className="col-12 col-md-6 col-lg-4" key={todo.id}>
                         <NavLink className="text"
-                            to={`/elenco/ ${todo.id}`}>
+                            to={`/elenco/${todo.id}`}>
                             <div className="card rounded-0 d-flex">
                                 <div className="todo-image">
                                     <img src={todo.image} className='img-fluid' alt="" />
@@ -36,7 +35,7 @@ function Elenco() {
                             </div>
                         </NavLink>
                     </div>
-                ))}
+                })}
             </div>
         </>
     )
