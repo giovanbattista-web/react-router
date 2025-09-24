@@ -1,24 +1,34 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
+
+const links = [
+    {
+        path: "/",
+        label: "Homepage",
+    },
+    {
+        path: "/about",
+        label: "About Us",
+    },
+    {
+        path: "/products",
+        label: "Products",
+    },
+]
 
 const Navbar = () => {
     return (
-        <>
+        <header>
             <nav>
-                <ul className='content, text'>
-                    <li>
-                        <NavLink to="/">Homepage</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/chisiamo">Chi Siamo</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/elenco">Elenco</NavLink>
-                    </li>
+                <ul className="list-unstyled d-flex">
+                    {links.map((link, index) => (
+                        <li className='list-item' key={index}>
+                            <NavLink to={link.path}>{link.label}</NavLink>
+                        </li>
+                    ))}
 
                 </ul>
             </nav>
-        </>
+        </header>
     )
 };
 

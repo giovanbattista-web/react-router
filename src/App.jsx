@@ -1,9 +1,8 @@
 import Homepage from './pages/Homepage';
-import ChiSiamo from './pages/ChiSiamo';
-import Elenco from './elenco/Elenco';
+import About from './pages/About.jsx';
+import Products from './pages/Products.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import DefaultLayout from './layouts/DefaultLayout';
-import Detail from './elenco/Detail.jsx';
+import SingleProduct from './pages/SingleProduct.jsx';
 
 function App() {
 
@@ -12,14 +11,10 @@ function App() {
       {/* ANDIAMO AD USARE LA COMPONENTE BrowserRouter */}
       <BrowserRouter>
         <Routes>
-          <Route element={<DefaultLayout />}>
-            <Route path='/' element={<Homepage />} />
-            <Route path='/chisiamo' element={<ChiSiamo />} />
-            <Route path='/elenco'>
-              <Route index element={<Elenco />} />
-              <Route path=':id' element={<Detail />} />
-            </Route>
-          </Route>
+          <Route path='/' Component={Homepage} />
+          <Route path='/about' Component={About} />
+          <Route path='/products' Component={Products} />
+          <Route path='/products/:id' Component={SingleProduct} />
         </Routes>
       </BrowserRouter>
     </>
