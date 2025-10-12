@@ -3,7 +3,7 @@ Creiamo il frontend del nostro Blog e le sue pagine!
 Partiamo installando React Router DOM: 
 •	npm install react-router-dom
 
-Definiamo almeno 3 pagine: 
+Definiamo 3 pagine: 
 •	Una homepage
 •	Una pagina "chi siamo" 
 •	Una pagina con un elenco di prodotti, personaggi, post – scegliete voi
