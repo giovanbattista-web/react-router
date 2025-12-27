@@ -6,13 +6,8 @@ Partiamo installando React Router DOM:
 Definiamo 3 pagine: 
 •	Una homepage
 •	Una pagina "chi siamo" 
-•	Una pagina con un elenco di prodotti, personaggi, post – scegliete voi
+•	Una pagina con un elenco di prodotti
  
-Potete utilizzare le API di : 
-•	Rick & Morty https://rickandmortyapi.com
-•	FakeStore https://fakestoreapi.com
-•	Oppure l'esercizio fatto con Node ed Express
-
 Implementiamo una Navbar in comune a tutte le pagine per poter navigare tra loro.
 
 Numero minimo di push: 8/9
