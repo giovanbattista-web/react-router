@@ -6,10 +6,7 @@ const Homepage = () => {
             <Navbar />
             <div>
                 <h1>Homepage</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde magni accusamus iure ut,
-                    possimus error ex quaerat excepturi similique fuga ad modi quibusdam, quis voluptatem
-                    eligendi officia maxime non! Debitis?
-                </p>
+                <p>Ciao, sono Giovanbattista e sono un Full-stack Web Developer.</p>
             </div>
         </>
     )
