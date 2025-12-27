@@ -5,9 +5,12 @@ const Homepage = () => {
         <>
             <Navbar />
             <div>
-                <h1>Homepage</h1>
-                <p>Ciao, sono Giovanbattista e sono un Full-stack Web Developer.</p>
+                <h1><strong>Full-stack Web Developer</strong></h1>
+                <ul>
+                    <li><p>Sviluppo soluzioni complete, curando ogni passaggio dal Design dell'interfaccia alla logica del back-end. Con un approccio basato sul miglioramento continuo, utilizzando tecnologie come React per creare applicazioni dinamiche, scalabili e orientate all'utente.</p></li>
+                </ul>
             </div>
+
         </>
     )
 };

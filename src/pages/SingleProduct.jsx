@@ -24,14 +24,16 @@ const SingleProduct = () => {
         <div className='container'>
             <div className='row'>
                 <div className='col-12'>
-                    <h1>Dettaglio Prodotto</h1>
+                    <h1><strong>Dettaglio Prodotto</strong></h1>
                 </div>
                 <div className='col-12'>
                     <img src={product.image} alt="" className='fix-dim-img' />
-                    <h2>{product.title}</h2>
-                    <p>{product.price}€</p>
-                    <p>{product.category}</p>
-                    <p>{product.description}</p>
+                    <h2><strong>{product.title}</strong></h2>
+                    <ul>
+                        <li><p>{product.price}€</p></li>
+                        <li><p>{product.category}</p></li>
+                        <li><p>{product.description}</p></li>
+                    </ul>
                 </div>
             </div>
         </div>

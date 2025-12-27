@@ -21,7 +21,7 @@ const Products = () => {
     return (
         <div>
             <Navbar />
-            <h1>Elenco prodotti</h1>
+            <h1><strong>Elenco prodotti</strong></h1>
             <div className='container'>
                 <div className='row g-4'>
                     {products.map((product) => (
@@ -32,9 +32,11 @@ const Products = () => {
                                         <img src={product.image} alt={product.title} className='img-fluid' />
                                     </div>
                                     <div className='card-body text-dark list-unstyled'>
-                                        <h3>{product.title}</h3>
-                                        <p>{product.category}</p>
-                                        <p>{product.price}€</p>
+                                        <h2><strong>{product.title}</strong></h2>
+                                        <ul>
+                                            <li><p>{product.category}</p></li>
+                                            <li><p>{product.price}€</p></li>
+                                        </ul>
                                     </div>
                                 </NavLink>
                             </div>
